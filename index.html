@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THRONE OF WAR — Battle Pass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="war-grid"></div>
+
+<header class="hero">
+    <div class="status">WORLD COMMAND SYSTEM</div>
+
+    <h1>THRONE OF WAR</h1>
+    <p>تاج و تخت جنگ</p>
+
+    <div class="line"></div>
+
+    <p class="subtitle">
+        BATTLE PASS • SEASON COMMAND
+    </p>
+
+    <button class="admin-open" onclick="openAdmin()">
+        ADMIN PANEL
+        <small>پنل مدیریت</small>
+    </button>
+</header>
+
+
+<main>
+
+<section class="passes">
+
+    <!-- NORMAL -->
+
+    <article class="pass-card">
+
+        <div class="card-top">
+            <span>NORMAL</span>
+            <small>بتل پس عادی</small>
+        </div>
+
+        <div class="price">
+            ۱۸۹,۰۰۰
+            <small>تومان</small>
+        </div>
+
+        <p class="description">
+            مسیر استاندارد فرماندهی با پاداش‌های اقتصادی،
+            نظامی و استراتژیک.
+        </p>
+
+
+        <div class="reward">
+            <b>DAY 01 — Royal Fortune</b>
+            <small>ثروت سلطنتی</small>
+            <p>یک پاداش اقتصادی ویژه برای خزانه کشور.</p>
+        </div>
+
+        <div class="reward">
+            <b>DAY 02 — Resource Vault</b>
+            <small>خزانه منابع</small>
+            <p>بسته‌ای از منابع ارزشمند برای اقتصاد بازی.</p>
+        </div>
+
+        <div class="reward">
+            <b>DAY 03 — Royal Guard</b>
+            <small>گارد سلطنتی</small>
+            <p>یک نیروی ویژه و کمیاب خارج از فروشگاه عادی.</p>
+        </div>
+
+        <div class="reward">
+            <b>DAY 04 — Imperial Sky</b>
+            <small>آسمان امپراتوری</small>
+            <p>یک پاداش هوایی کمیاب و قدرتمند.</p>
+        </div>
+
+        <div class="reward">
+            <b>DAY 05 — War Supply</b>
+            <small>تدارکات جنگی</small>
+            <p>یک بسته تجهیزات ویژه با محتوای تعیین‌شده توسط ادمین.</p>
+        </div>
+
+        <div class="reward">
+            <b>DAY 06 — King's Decree</b>
+            <small>فرمان پادشاه</small>
+            <p>یک قابلیت ویژه و یک‌بارمصرف برای کشور.</p>
+        </div>
+
+        <div class="reward highlight">
+            <b>DAY 07 — Royal Chest</b>
+            <small>صندوق سلطنتی</small>
+            <p>جایزه نهایی شامل پول، منابع و یک پاداش ویژه.</p>
+        </div>
+
+        <button class="buy" onclick="selectPass('NORMAL')">
+            SELECT NORMAL
+            <small>انتخاب بتل پس عادی</small>
+        </button>
+
+    </article>
+
+
+    <!-- PREMIUM -->
+
+    <article class="pass-card premium">
+
+        <div class="premium-label">
+            PREMIUM
+        </div>
+
+        <div class="card-top">
+            <span>PREMIUM</span>
+            <small>بتل پس پرمیوم</small>
+        </div>
+
+        <div class="price">
+            ۲۴۹,۰۰۰
+            <small>تومان</small>
+        </div>
+
+        <div class="difference">
+            فقط ۶۰,۰۰۰ تومان بیشتر
+        </div>
+
+        <p class="description">
+            مسیر ویژه فرماندهی با پاداش‌های کمیاب‌تر
+            و قابلیت‌های اختصاصی.
+        </p>
+
+
+        <div class="reward">
+            <b>DAY 01 — Imperial Fortune</b>
+            <small>ثروت امپراتوری</small>
+            <p>پاداش اقتصادی بزرگ‌تر برای تقویت خزانه کشور.</p>
+        </div>
+
+        <div class="reward">
+            <b>DAY 02 — Lightning Sky</b>
+            <small>آسمان صاعقه‌ای</small>
+            <p>یک پاداش هوایی فوق‌العاده کمیاب.</p>
+        </div>
+
+        <div class="reward">
+            <b>DAY 03 — Shadow Network</b>
+            <small>شبکه سایه</small>
+            <p>یک قابلیت اطلاعاتی ویژه برای استراتژی بازی.</p>
+        </div>
+
+        <div class="reward">
+            <b>DAY 04 — Global Eye</b>
+            <small>چشم جهانی</small>
+            <p>یک قابلیت ویژه برای بررسی وضعیت جهان.</p>
+        </div>
+
+        <div class="reward highlight">
+            <b>DAY 05 — Emergency Peace</b>
+            <small>آتش‌بس اضطراری</small>
+            <p>یک آتش‌بس محدود و یک‌بارمصرف طبق قوانین بازی.</p>
+        </div>
+
+        <div class="reward">
+            <b>DAY 06 — Final Strike</b>
+            <small>ضربه نهایی</small>
+            <p>یک آیتم استراتژیک بسیار کمیاب با استفاده محدود.</p>
+        </div>
+
+        <div class="reward">
+            <b>DAY 07 — Elite Arsenal</b>
+            <small>زرادخانه نخبه</small>
+            <p>بسته تجهیزات ویژه با محتوای تعیین‌شده توسط ادمین.</p>
+        </div>
+
+        <div class="ultimate">
+            <b>IMPERIAL REWARD</b>
+            <small>پاداش امپراتوری</small>
+            <p>یک جایزه Exclusive برای تکمیل کامل Premium.</p>
+        </div>
+
+        <button class="buy premium-buy" onclick="selectPass('PREMIUM')">
+            SELECT PREMIUM
+            <small>انتخاب بتل پس پرمیوم</small>
+        </button>
+
+    </article>
+
+</section>
+
+
+<!-- PLAYER -->
+
+<section id="playerBox" class="panel">
+
+    <div class="panel-title">
+        <span>01</span>
+        PLAYER IDENTIFICATION
+    </div>
+
+    <p>مشخصات فرمانده را وارد کنید.</p>
+
+    <div class="selected-pass">
+        Battle Pass:
+        <b id="selectedPass">---</b>
+    </div>
+
+    <label>نام کشور</label>
+    <input id="country" type="text" placeholder="نام کشور">
+
+    <label>Player ID</label>
+    <input id="playerId" type="text" placeholder="آیدی بازیکن">
+
+    <button class="main-button" onclick="continuePurchase()">
+        CONTINUE
+    </button>
+
+</section>
+
+
+<!-- PAYMENT -->
+
+<section id="paymentBox" class="panel">
+
+    <div class="panel-title">
+        <span>02</span>
+        PAYMENT
+    </div>
+
+    <div id="orderSummary"></div>
+
+    <div class="payment-card">
+
+        <h3>PAYMENT INFORMATION</h3>
+        <p>اطلاعات پرداخت</p>
+
+        <div class="card-number">
+            شماره کارت را اینجا وارد کنید
+        </div>
+6219861956381452
+        <div class="card-owner">
+            نام صاحب کارت
+        </div>
+امیرحسین عابدی نژاد
+    </div>
+
+    <label>تصویر رسید واریز</label>
+
+    <input
+        id="receipt"
+        type="file"
+        accept="image/*"
+        onchange="previewReceipt()"
+    >
+
+    <div id="preview"></div>
+
+    <button class="main-button" onclick="submitOrder()">
+        SUBMIT ORDER
+        <small>ثبت سفارش</small>
+    </button>
+
+</section>
+
+
+<!-- ADMIN LOGIN -->
+
+<div id="adminModal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="close" onclick="closeAdmin()">×</button>
+
+        <div class="command-icon">✦</div>
+
+        <h2>ADMIN COMMAND</h2>
+        <p>ورود فرمانده</p>
+
+        <label>Username</label>
+        <input id="adminUser" type="text">
+
+        <label>Password</label>
+        <input id="adminPass" type="password">
+
+        <button class="main-button" onclick="loginAdmin()">
+            LOGIN
+        </button>
+
+        <div id="loginError"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ADMIN PANEL -->
+
+<section id="adminPanel" class="admin-panel">
+
+    <div class="admin-header">
+
+        <div>
+            <span>COMMAND CENTER</span>
+            <h2>ORDER CONTROL</h2>
+            <p>مدیریت سفارش‌های Battle Pass</p>
+        </div>
+
+        <button onclick="logout()">
+            LOGOUT
+        </button>
+
+    </div>
+
+    <div id="orders"></div>
+
+</section>
+
+</main>
+
+
+<footer>
+    THRONE OF WAR
+    <small>THE WORLD IS YOUR KINGDOM</small>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
